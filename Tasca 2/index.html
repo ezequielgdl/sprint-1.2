@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tasca 2</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg my-3">
+      <div class="container">
+        <!-- Logo -->
+        <a class="navbar-brand" href="#">
+          <img src="./assets/logo-bookmark.svg" alt="bookmark logo" />
+        </a>
+
+        <!-- Burger Menu Button -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="modal"
+          data-bs-target="#mobileMenuModal"
+        >
+          <!-- Include the SVG icon -->
+          <img src="./assets/icon-hamburger.svg" alt="Toggle navigation" />
+        </button>
+
+        <!-- Navbar Links -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto">
+            <!-- Features -->
+            <li class="nav-item mx-3">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+            <!-- Pricing -->
+            <li class="nav-item mx-3">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <!-- Contact -->
+            <li class="nav-item mx-3">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+            <!-- Login Button -->
+            <li class="nav-item mx-3">
+              <button class="btn btn-primary" href="#">Login</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Full-screen Modal -->
+    <div
+      class="modal fade"
+      id="mobileMenuModal"
+      tabindex="-1"
+      aria-labelledby="mobileMenuModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content opacity-90">
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">
+              <img src="./assets/logo-bookmark.svg" alt="bookmark logo" />
+            </a>
+            <!-- Close Button -->
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <!-- Modal Body -->
+          <div class="modal-body d-flex flex-column align-items-center">
+            <!-- Navbar Links -->
+            <ul class="navbar-nav mx-auto">
+              <!-- Features -->
+              <li class="nav-item mb-3">
+                <a class="nav-link" href="#">FEATURES</a>
+              </li>
+              <hr class="dropdown-divider" />
+              <!-- Pricing -->
+              <li class="nav-item mb-3">
+                <a class="nav-link" href="#">PRICING</a>
+              </li>
+              <hr class="dropdown-divider" />
+              <!-- Contact -->
+              <li class="nav-item mb-3">
+                <a class="nav-link" href="#">CONTACT</a>
+              </li>
+              <hr class="dropdown-divider" />
+              <!-- Login Button -->
+              <li class="nav-item mb-3">
+                <button class="btn btn-primary" href="#">LOGIN</button>
+              </li>
+            </ul>
+            <!-- Social Icons -->
+            <div class="d-flex justify-content-center mt-4">
+              <img
+                src="./assets/icon-facebook.svg"
+                alt="Facebook Logo"
+                class="me-3"
+              />
+              <img src="./assets/icon-twitter.svg" alt="Twitter Logo" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container py-5">
+      <div class="row justify-content-center align-items-center">
+        <div class="col-md-6 order-md-1">
+          <img
+            src="./assets/illustration-hero.svg"
+            class="img-fluid"
+            alt="..."
+          />
+        </div>
+        <div class="col-md-6 order-md-0">
+          <div class="text-center text-md-start mb-4">
+            <h1>A Simple Bookmark Manager</h1>
+            <p>
+              A clean and simple interface to organize your favorite websites.
+              Open a new browser tab and see your sites load instantly. Try it
+              for free.
+            </p>
+          </div>
+          <div class="text-center text-md-start">
+            <button class="btn btn-primary me-3">Get it on Chrome</button>
+            <button class="btn btn-secondary">Get it on Firefox</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
