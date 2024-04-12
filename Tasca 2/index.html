@@ -15,15 +15,14 @@
         </a>
 
         <!-- Burger Menu Button -->
-        <button
-          class="navbar-toggler"
+        <img
           type="button"
           data-bs-toggle="modal"
           data-bs-target="#mobileMenuModal"
-        >
-          <!-- Include the SVG icon -->
-          <img src="./assets/icon-hamburger.svg" alt="Toggle navigation" />
-        </button>
+          src="./assets/icon-hamburger.svg"
+          alt="Toggle navigation"
+          class="d-lg-none"
+        />
 
         <!-- Navbar Links -->
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -42,7 +41,9 @@
             </li>
             <!-- Login Button -->
             <li class="nav-item mx-3">
-              <button class="btn btn-primary" href="#">Login</button>
+              <button class="btn btn-primary shadow-sm py-2 px-5" href="#">
+                LOGIN
+              </button>
             </li>
           </ul>
         </div>
@@ -74,27 +75,29 @@
             ></button>
           </div>
           <!-- Modal Body -->
-          <div class="modal-body d-flex flex-column align-items-center">
+          <div
+            class="modal-body d-flex flex-column align-items-center opacity-75"
+          >
             <!-- Navbar Links -->
             <ul class="navbar-nav mx-auto">
               <!-- Features -->
               <li class="nav-item mb-3">
-                <a class="nav-link" href="#">FEATURES</a>
+                <a class="nav-link text-center" href="#">FEATURES</a>
               </li>
               <hr class="dropdown-divider" />
               <!-- Pricing -->
               <li class="nav-item mb-3">
-                <a class="nav-link" href="#">PRICING</a>
+                <a class="nav-link text-center" href="#">PRICING</a>
               </li>
               <hr class="dropdown-divider" />
               <!-- Contact -->
               <li class="nav-item mb-3">
-                <a class="nav-link" href="#">CONTACT</a>
+                <a class="nav-link text-center" href="#">CONTACT</a>
               </li>
               <hr class="dropdown-divider" />
               <!-- Login Button -->
               <li class="nav-item mb-3">
-                <button class="btn btn-primary" href="#">LOGIN</button>
+                <button class="btn btn-primary shadow" href="#">LOGIN</button>
               </li>
             </ul>
             <!-- Social Icons -->
@@ -111,8 +114,10 @@
       </div>
     </div>
 
+    <!-- Hero -->
     <div class="container py-5">
       <div class="row justify-content-center align-items-center">
+        <!-- Illustration Hero -->
         <div class="col-md-6 order-md-1">
           <img
             src="./assets/illustration-hero.svg"
@@ -120,6 +125,7 @@
             alt="..."
           />
         </div>
+        <!-- Text Hero -->
         <div class="col-md-6 order-md-0">
           <div class="text-center text-md-start mb-4">
             <h1>A Simple Bookmark Manager</h1>
@@ -130,9 +136,65 @@
             </p>
           </div>
           <div class="text-center text-md-start">
-            <button class="btn btn-primary me-3">Get it on Chrome</button>
-            <button class="btn btn-secondary">Get it on Firefox</button>
+            <button class="btn btn-primary me-3 shadow">
+              Get it on Chrome
+            </button>
+            <button class="btn btn-secondary shadow">Get it on Firefox</button>
           </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mt-2 justify-content-center">
+      <!-- Features -->
+      <div class="row">
+        <div class="col">
+          <h2 class="mb-4 text-center my-3">Features</h2>
+          <p class="text-center mx-auto w-50 my-5">
+            Our aim is to make it quick and easy for you to access your
+            favourite websites. Your bookmarks sync between your devices so you
+            can access them on the go.
+          </p>
+        </div>
+      </div>
+      <!-- Tabs -->
+      <ul class="nav nav-tabs justify-content-center flex-column flex-md-row">
+        <li class="nav-item">
+          <a class="nav-link active text-center" aria-current="page" href="#"
+            >Simple Bookmarking</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-center" href="#">Speedy Searching</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-center" href="#">Easy Sharing</a>
+        </li>
+      </ul>
+
+      <!-- Two column grid -->
+      <div class="row my-5 align-items-center">
+        <div class="col-md-6 col-sm-12">
+          <!-- Image -->
+          <img
+            src="./assets/illustration-features-tab-1.svg"
+            class="img-fluid"
+            alt="Image"
+          />
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <!-- Title -->
+          <h3 class="my-3">Bookmark in one click</h3>
+          <!-- Text -->
+          <p class="my-4">
+            Organize your bookmarks however you like. Our simple drag-and-drop
+            interface gives you complete over how you manage your favourite
+            sites.
+          </p>
+          <!-- Button -->
+          <button class="btn btn-primary shadow py-2 px-4 d-none d-md-block">
+            More Info
+          </button>
         </div>
       </div>
     </div>
