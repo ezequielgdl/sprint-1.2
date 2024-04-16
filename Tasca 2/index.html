@@ -41,7 +41,7 @@
             </li>
             <!-- Login Button -->
             <li class="nav-item mx-3">
-              <button class="btn btn-primary shadow-sm py-2 px-5" href="#">
+              <button class="btn btn-secondary shadow-sm py-2 px-5" href="#">
                 LOGIN
               </button>
             </li>
@@ -139,7 +139,7 @@
             <button class="btn btn-primary me-3 shadow">
               Get it on Chrome
             </button>
-            <button class="btn btn-secondary shadow">Get it on Firefox</button>
+            <button class="btn btn-gray shadow">Get it on Firefox</button>
           </div>
         </div>
       </div>
@@ -158,7 +158,9 @@
         </div>
       </div>
       <!-- Tabs -->
-      <ul class="nav nav-tabs justify-content-center flex-column flex-md-row">
+      <ul
+        class="nav nav-underline nav-fill justify-content-center flex-column flex-md-row"
+      >
         <li class="nav-item">
           <a class="nav-link active text-center" aria-current="page" href="#"
             >Simple Bookmarking</a
@@ -173,6 +175,7 @@
       </ul>
 
       <!-- Two column grid -->
+
       <div class="row my-5 align-items-center">
         <div class="col-md-6 col-sm-12">
           <!-- Image -->
@@ -182,7 +185,7 @@
             alt="Image"
           />
         </div>
-        <div class="col-md-6 col-sm-12">
+        <div class="col-md-6 col-sm-12 justify-content-center">
           <!-- Title -->
           <h3 class="my-3">Bookmark in one click</h3>
           <!-- Text -->
@@ -200,7 +203,7 @@
     </div>
 
     <!-- Extension Container -->
-    <div class="container">
+    <div class="container my-5">
       <div class="row">
         <div class="col">
           <h2 class="mb-4 text-center">Download the extension</h2>
@@ -268,7 +271,7 @@
     </div>
 
     <!-- FAQ container -->
-    <div class="container">
+    <div class="container my-5">
       <div class="row">
         <div class="col">
           <h2 class="mb-4 text-center">Frequently Asked Questions</h2>
@@ -280,9 +283,9 @@
       </div>
     </div>
     <!-- Accordion -->
-    <div class="container">
-      <div class="row">
-        <div class="col">
+    <div class="container mb-5">
+      <div class="row my-5 justify-content-center">
+        <div class="col-md-6">
           <div class="accordion accordion-flush" id="accordionFlushExample">
             <div class="accordion-item">
               <h2 class="accordion-header" id="flush-headingOne">
@@ -391,10 +394,74 @@
                 </div>
               </div>
             </div>
-            <button class="btn btn-primary shadow py-2 px-4 d-none d-md-block">
-              More Info
-            </button>
+            <div class="row justify-content-center">
+              <div class="col-md-8 text-center">
+                <button class="btn btn-primary shadow py-2 px-4 my-5">
+                  More Info
+                </button>
+              </div>
+            </div>
           </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid mt-5">
+      <div class="row bg-primary py-5">
+        <div class="col-md-6 offset-md-3 text-center">
+          <p class="text-bg-primary py-3">35,000+ ALREADY JOINED</p>
+          <h3 class="text-bg-primary m-5">
+            Stay up-to-date with what we're doing
+          </h3>
+          <form class="d-flex justify-content-center">
+            <div class="input-group mb-3">
+              <input
+                type="email"
+                class="form-control"
+                id="exampleInputEmail1"
+                aria-describedby="emailHelp"
+                placeholder="Enter your email"
+              />
+              <button type="submit" class="btn btn-secondary shadow">
+                Contact Us
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid m-0">
+      <div class="row bg-primary py-2 px-5">
+        <div class="col-lg-6">
+          <!-- Left side: Logo and navigation links -->
+          <nav class="nav">
+            <img src="./assets/logo-bookmark.svg" alt="Logo" />
+            <a class="nav-link text-bg-primary" href="#">FEATURES</a>
+            <a class="nav-link text-bg-primary" href="#">PRICING</a>
+            <a class="nav-link text-bg-primary" href="#">CONTACT</a>
+          </nav>
+        </div>
+        <div class="col-lg-6">
+          <!-- Right side: Social logos -->
+          <ul class="list-inline text-end">
+            <li class="list-inline-item">
+              <a href="#"
+                ><img
+                  src="./assets/icon-facebook.svg"
+                  alt="Facebook"
+                  class="footer-logo"
+              /></a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#"
+                ><img
+                  src="./assets/icon-twitter.svg"
+                  alt="Twitter"
+                  class="footer-logo"
+              /></a>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
