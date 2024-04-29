@@ -50,7 +50,7 @@
       </div>
     </nav>
 
-    <!-- Full-screen Modal -->
+    <!-- Modal Full Screen -->
     <div
       class="modal fade"
       id="mobileMenuModal"
@@ -60,13 +60,13 @@
     >
       <div class="modal-dialog modal-fullscreen">
         <div class="modal-content opacity-90">
-          <!-- Modal Header -->
+          <!-- Header Modal -->
           <div class="modal-header">
             <!-- Logo -->
             <a class="navbar-brand" href="#">
               <img src="./assets/logo-bookmark.svg" alt="bookmark logo" />
             </a>
-            <!-- Close Button -->
+            <!-- Botón Cerrar -->
             <button
               type="button"
               class="btn-close"
@@ -413,17 +413,19 @@
           <h3 class="text-bg-primary m-5">
             Stay up-to-date with what we're doing
           </h3>
-          <form class="d-flex justify-content-center">
-            <div class="input-group mb-3">
+          <form class="row g-3 needs-validation" novalidate>
+            <div class="col-lg-9">
               <input
-                type="email"
+                type="text"
                 class="form-control"
-                id="exampleInputEmail1"
-                aria-describedby="emailHelp"
-                placeholder="Enter your email"
+                id="emailInput"
+                required
               />
-              <button type="submit" class="btn btn-secondary shadow">
-                Contact Us
+              <div class="invalid-feedback">Please provide email.</div>
+            </div>
+            <div class="col-lg-3">
+              <button class="btn btn-secondary shadow" type="submit">
+                Submit form
               </button>
             </div>
           </form>
@@ -470,5 +472,27 @@
     </div>
 
     <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+      (function () {
+        "use strict";
+
+        var forms = document.querySelectorAll(".needs-validation");
+
+        Array.prototype.slice.call(forms).forEach(function (form) {
+          form.addEventListener(
+            "submit",
+            function (event) {
+              if (!form.checkValidity()) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+
+              form.classList.add("was-validated");
+            },
+            false
+          );
+        });
+      })();
+    </script>
   </body>
 </html>
