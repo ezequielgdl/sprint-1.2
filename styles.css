@@ -11461,12 +11461,13 @@ textarea.form-control-lg {
 
 .illustration-container {
   position: relative;
+  overflow: hidden;
 }
 .illustration-container .hero-banner-shape {
   position: absolute;
   bottom: 5%;
-  left: 20%;
-  width: 150%;
+  left: 30%;
+  width: 100%;
   height: 80%;
   background-color: #5265e1;
   z-index: -1;
@@ -11475,11 +11476,12 @@ textarea.form-control-lg {
 
 .bookmarking-container {
   position: relative;
+  overflow: hidden;
 }
 .bookmarking-container .features-shape {
   position: absolute;
-  bottom: -10%;
-  right: 35%;
+  bottom: 0;
+  right: 30%;
   width: 150%;
   height: 80%;
   background-color: #5265e1;
